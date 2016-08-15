@@ -16,6 +16,13 @@ our_trie.make_trie()
 
 #The prefix/words to search
 a=[]
-a.append('a')
-a.append('As')
+p=''
+while(1):
+    p=input('enter the prefixes , else to exit enter q: ')
+    if(p=='q'):
+        break
+    else:
+        a.append(p)
+    
+
 our_trie.check_prefixes(a) 
